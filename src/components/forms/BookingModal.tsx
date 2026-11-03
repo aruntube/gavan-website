@@ -74,7 +74,8 @@ export function BookingModal({ open, topic, onClose }: Props) {
 
   return (
     <div
-      className={cn("fixed inset-0 z-[95] flex items-end justify-center sm:items-center", open ? "pointer-events-auto" : "pointer-events-none")}
+      className={cn("fixed inset-0 z-[95] flex items-end justify-center sm:items-center", open ? "pointer-events-auto visible" : "pointer-events-none invisible")}
+      style={{ transitionProperty: "visibility", transitionDuration: open ? "0s" : "400ms" }}
       aria-hidden={!open}
     >
       <div
