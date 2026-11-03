@@ -8,8 +8,7 @@ import { ProposalForm } from "@/components/forms/ProposalForm";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden py-20 sm:py-28">
-      <div className="pointer-events-none absolute -bottom-40 -left-32 size-[560px] rounded-full bg-brand-200/40 blur-3xl" aria-hidden />
+    <section id="contact" className="py-20 sm:py-28">
       <Container className="relative">
         <SectionHeading eyebrow={getStarted.eyebrow} title={getStarted.title} align="center" />
         <ol className="mt-12 grid gap-5 md:grid-cols-3">
