@@ -26,13 +26,9 @@ export const site = {
 
 export const nav = [
   { label: "About", href: "#about" },
-  { label: "Why Us", href: "#why-us" },
   { label: "Services", href: "#services" },
-  { label: "Accelerators", href: "#accelerators" },
-  { label: "Project Rescue", href: "#rescue" },
   { label: "Solutions", href: "#solutions" },
-  { label: "Process", href: "#process" },
-  { label: "Leadership", href: "#leadership" },
+  { label: "How We Work", href: "#process" },
   { label: "Contact", href: "#contact" },
 ] as const;
 

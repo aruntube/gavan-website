@@ -60,7 +60,7 @@ export function Header() {
               <span className="block font-display text-[17px] font-extrabold tracking-tight text-ink-800 sm:text-lg">
                 {site.name}
               </span>
-              <span className="mt-1 hidden whitespace-nowrap text-[10.5px] font-medium tracking-[0.12em] text-ink-400 sm:block xl:hidden 2xl:block">
+              <span className="mt-1 hidden whitespace-nowrap text-[10.5px] font-medium tracking-[0.12em] text-ink-400 sm:block ">
                 {site.tagline}
               </span>
             </span>
@@ -68,13 +68,13 @@ export function Header() {
 
           <nav
             aria-label="Primary"
-            className="hidden items-center gap-1 xl:flex"
+            className="hidden items-center gap-1 lg:flex"
           >
             {nav.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="whitespace-nowrap rounded-full px-2.5 py-2 text-[13.5px] font-medium text-ink-600 transition-colors hover:bg-brand-50 hover:text-brand-700 2xl:px-3"
+                className="whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-ink-600 transition-colors hover:bg-brand-50 hover:text-brand-700"
               >
                 {item.label}
               </a>
@@ -95,7 +95,7 @@ export function Header() {
               aria-label="Open menu"
               aria-expanded={open}
               aria-controls="mobile-menu"
-              className="inline-flex size-11 items-center justify-center rounded-full border border-ink-200 bg-white text-ink-800 xl:hidden"
+              className="inline-flex size-11 items-center justify-center rounded-full border border-ink-200 bg-white text-ink-800 lg:hidden"
             >
               <Menu className="size-5" aria-hidden />
             </button>
@@ -110,7 +110,7 @@ export function Header() {
         aria-modal="true"
         aria-label="Site menu"
         className={cn(
-          "fixed inset-0 z-[85] overflow-hidden xl:hidden",
+          "fixed inset-0 z-[85] overflow-hidden lg:hidden",
           open ? "pointer-events-auto" : "pointer-events-none invisible",
         )}
         style={{
