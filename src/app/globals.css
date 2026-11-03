@@ -140,3 +140,127 @@
     transform: none;
   }
 }
+
+/* ---- Hero motion ------------------------------------------------------- */
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@keyframes hero-underline {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes orb-drift-a {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-60px, 40px, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(20px, -30px, 0) scale(0.96);
+  }
+}
+
+@keyframes orb-drift-b {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(50px, -40px, 0) scale(1.1);
+  }
+  100% {
+    transform: translate3d(-30px, 20px, 0) scale(0.95);
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes btn-shine {
+  from {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  to {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
+.hero-in {
+  animation: hero-in 0.9s var(--ease-out-expo) both;
+  animation-delay: var(--d, 0ms);
+}
+
+.hero-underline {
+  animation: hero-underline 0.8s var(--ease-out-expo) 0.9s both;
+}
+
+.hero-orb {
+  will-change: transform;
+}
+.hero-orb-a {
+  animation: orb-drift-a 26s ease-in-out infinite alternate;
+}
+.hero-orb-b {
+  animation: orb-drift-b 32s ease-in-out infinite alternate;
+}
+
+.hero-float {
+  animation: hero-float 9s ease-in-out 1.4s infinite;
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: translateX(-120%) skewX(-18deg);
+  pointer-events: none;
+}
+.btn-shine:hover::after {
+  animation: btn-shine 0.9s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-in,
+  .hero-underline,
+  .hero-orb-a,
+  .hero-orb-b,
+  .hero-float,
+  .btn-shine:hover::after {
+    animation: none;
+  }
+  .hero-in,
+  .hero-underline {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
