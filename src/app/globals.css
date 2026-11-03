@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand teal scale built around #356A69 */
+  --color-brand-50: #f1f6f6;
+  --color-brand-100: #dcebea;
+  --color-brand-200: #b9d6d5;
+  --color-brand-300: #8dbab9;
+  --color-brand-400: #609a99;
+  --color-brand-500: #447f7e;
+  --color-brand-600: #356a69;
+  --color-brand-700: #2c5857;
+  --color-brand-800: #244746;
+  --color-brand-900: #1c3837;
+  --color-brand-950: #0f2322;
+
+  /* Ink (slate) scale built around #313B44 */
+  --color-ink-50: #f4f6f7;
+  --color-ink-100: #e6eaed;
+  --color-ink-200: #cfd6db;
+  --color-ink-300: #a7b3bc;
+  --color-ink-400: #7a8893;
+  --color-ink-500: #5a6873;
+  --color-ink-600: #46525c;
+  --color-ink-700: #3a444d;
+  --color-ink-800: #313b44;
+  --color-ink-900: #242c33;
+  --color-ink-950: #161b1f;
+
+  --color-surface: #f7f9f9;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), var(--font-inter), ui-sans-serif, sans-serif;
+
+  --shadow-ambient: 0 1px 2px rgba(49, 59, 68, 0.04), 0 16px 40px -16px rgba(49, 59, 68, 0.12);
+  --shadow-lift: 0 2px 4px rgba(49, 59, 68, 0.05), 0 28px 56px -20px rgba(53, 106, 105, 0.22);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink-700);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink-800);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-200);
+    color: var(--color-ink-900);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
+  }
+
+  .card {
+    @apply rounded-2xl border border-ink-200/70 bg-white shadow-ambient transition-[transform,box-shadow,border-color] duration-500 ease-out-expo;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1 border-brand-300 shadow-lift;
+  }
+
+  .grid-paper {
+    background-image:
+      linear-gradient(to right, rgba(49, 59, 68, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(49, 59, 68, 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 40%, transparent 100%);
+  }
+
+  /* Scroll reveal */
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    .js .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .card,
+    .card-hover:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
