@@ -1,5 +1,5 @@
 export const lifecycleSection = {
-  index: "07",
+  index: "09",
   eyebrow: "Engineering governance",
   title: "A six-stage disciplined delivery lifecycle",
   lead: "A transparent, predictable methodology designed to eliminate scope ambiguity and production surprises.",

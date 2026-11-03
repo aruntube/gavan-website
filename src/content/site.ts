@@ -27,6 +27,7 @@ export const site = {
 export const nav = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "AI Delivery", href: "#adlc" },
   { label: "Solutions", href: "#solutions" },
   { label: "How We Work", href: "#process" },
   { label: "Contact", href: "#contact" },
@@ -167,7 +168,7 @@ export const values = {
 } as const;
 
 export const accelerators = {
-  index: "05",
+  index: "07",
   eyebrow: "Engineering velocity",
   title: "From concept to production in weeks, not quarters",
   lead: "We remove boilerplate setup delays by combining rapid clickable prototyping with pre-engineered service modules.",
@@ -214,13 +215,13 @@ export const rescue = {
 } as const;
 
 export const leadership = {
-  index: "07",
+  index: "10",
   eyebrow: "Founder & governance",
   title: "Leadership & governance",
 } as const;
 
 export const advantage = {
-  index: "08",
+  index: "11",
   eyebrow: "The partnership advantage",
   title: "Why growing enterprises choose Gavan Infotech",
   items: [
@@ -253,6 +254,8 @@ export const contact = {
     "Quality engineering & automated QA",
     "Cloud architecture & DevOps",
     "Data systems, applied AI & APIs",
+    "Agentic development (ADLC)",
+    "Forward deployed engineer (FDE)",
     "48-hour project rescue audit",
   ],
   successTitle: "Request received",
@@ -273,6 +276,8 @@ export const footer = {
     { label: "Overview", href: "#about" },
     { label: "Why Us", href: "#why-us" },
     { label: "Services", href: "#services" },
+    { label: "Agentic Delivery", href: "#adlc" },
+    { label: "Forward Deployed", href: "#fde" },
     { label: "Project Rescue", href: "#rescue" },
     { label: "Solutions", href: "#solutions" },
     { label: "Process", href: "#process" },

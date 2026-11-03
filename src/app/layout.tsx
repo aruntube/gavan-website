@@ -33,6 +33,8 @@ export const metadata: Metadata = {
     "QA automation",
     "applied AI",
     "legacy modernization",
+    "agentic development lifecycle",
+    "forward deployed engineer",
     "Gavan Infotech",
   ],
   alternates: { canonical: "/" },

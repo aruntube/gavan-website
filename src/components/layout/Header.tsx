@@ -74,7 +74,7 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium text-ink-600 transition-colors hover:bg-brand-50 hover:text-brand-700"
+                className="whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-ink-600 transition-colors hover:bg-brand-50 hover:text-brand-700 xl:px-4"
               >
                 {item.label}
               </a>

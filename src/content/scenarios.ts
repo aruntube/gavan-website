@@ -1,5 +1,5 @@
 export const scenariosSection = {
-  index: "06",
+  index: "08",
   eyebrow: "Target industries & practical use cases",
   title: "Pragmatic operational scenarios",
   lead: "Concrete engineering blueprints showing how our capabilities remove high-friction bottlenecks across key verticals.",

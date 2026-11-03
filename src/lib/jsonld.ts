@@ -22,6 +22,8 @@ export function organizationJsonLd() {
       "Quality engineering",
       "Cloud architecture and DevOps",
       "Data engineering and applied AI",
+      "Agentic software development",
+      "Forward deployed engineering",
     ],
     contactPoint: {
       "@type": "ContactPoint",

@@ -7,6 +7,8 @@ import { Overview } from "@/components/sections/Overview";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Values } from "@/components/sections/Values";
 import { Services } from "@/components/sections/Services";
+import { Adlc } from "@/components/sections/Adlc";
+import { Fde } from "@/components/sections/Fde";
 import { Accelerators } from "@/components/sections/Accelerators";
 import { Rescue } from "@/components/sections/Rescue";
 import { Scenarios } from "@/components/sections/Scenarios";
@@ -26,6 +28,8 @@ export default function Home() {
         <WhyUs />
         <Values />
         <Services />
+        <Adlc />
+        <Fde />
         <Accelerators />
         <Rescue />
         <Scenarios />

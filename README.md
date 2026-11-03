@@ -22,6 +22,7 @@ Node 22 is expected (see `.github/workflows/deploy.yml`).
 | `src/content/site.ts` | Company details, nav, hero, overview, values, accelerators, rescue, contact, footer |
 | `src/content/services.ts` | The six service practices (explorer + matrix) |
 | `src/content/scenarios.ts`, `lifecycle.ts`, `faq.ts`, `engagement.ts` | Industry use cases, delivery lifecycle, FAQs, engagement models |
+| `src/content/adlc.ts`, `fde.ts` | Agentic Development Lifecycle stages and guardrails; Forward Deployed Engineer offer |
 | `src/components/sections/` | One component per page section |
 | `src/components/forms/` | Proposal form, booking modal, Web3Forms hook |
 | `src/app/globals.css` | Brand colour tokens (`brand-*` teal, `ink-*` slate), fonts, base styles |
