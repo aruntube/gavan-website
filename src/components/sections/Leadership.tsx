@@ -1,4 +1,4 @@
-import { Quote, ShieldCheck, Eye, KeyRound, Star } from "lucide-react";
+import { Quote, ShieldCheck, Eye, KeyRound, Star, UserRound } from "lucide-react";
 import { advantage, leadership, site } from "@/content/site";
 import { engagementModels, engagementSection } from "@/content/engagement";
 import { cn } from "@/lib/cn";
@@ -19,15 +19,16 @@ export function Leadership() {
             <Reveal delay={80} className="mt-8">
               <div className="card p-7 sm:p-8">
                 <div className="flex items-center gap-5">
-                  <span className="inline-flex size-16 shrink-0 items-center justify-center rounded-2xl bg-ink-800 font-display text-xl font-extrabold text-white">
-                    {site.founder.initials}
+                  <span className="inline-flex size-16 shrink-0 items-center justify-center rounded-2xl bg-ink-800 text-white">
+                    <UserRound className="size-7" aria-hidden />
                   </span>
                   <div>
-                    <h3 className="text-xl font-bold">{site.founder.name}</h3>
-                    <p className="text-sm font-medium text-brand-700">{site.founder.title}</p>
+                    <h3 className="text-xl font-bold">{site.founder.title}</h3>
+                    <p className="text-sm font-medium text-brand-700">{site.founder.role}</p>
                   </div>
                 </div>
-                <blockquote className="relative mt-6 border-l-2 border-brand-300 pl-5 text-[15px] leading-relaxed text-ink-600">
+                <p className="mt-6 text-[15px] leading-relaxed text-ink-600">{site.founder.summary}</p>
+                <blockquote className="relative mt-5 border-l-2 border-brand-300 pl-5 text-[15px] leading-relaxed text-ink-600">
                   <Quote className="absolute -left-3 -top-3 size-5 rounded-full bg-white text-brand-300" aria-hidden />
                   {site.founder.quote}
                 </blockquote>

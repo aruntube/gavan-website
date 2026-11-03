@@ -93,7 +93,7 @@ export function ProposalForm() {
       </Button>
       <p className="text-xs leading-relaxed text-ink-400">
         {formsEnabled
-          ? `Every submission is reviewed personally by ${site.founder.name} ${site.responseTime}.`
+          ? `Every submission is reviewed personally by our founder ${site.responseTime}.`
           : `This opens your email client with the details prefilled. We reply ${site.responseTime}.`}
       </p>
     </form>

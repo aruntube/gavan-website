@@ -10,11 +10,6 @@ export function organizationJsonLd() {
     email: site.email,
     slogan: site.tagline,
     description: site.description,
-    founder: {
-      "@type": "Person",
-      name: site.founder.name,
-      jobTitle: site.founder.title,
-    },
     address: {
       "@type": "PostalAddress",
       addressCountry: "IN",

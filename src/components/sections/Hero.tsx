@@ -77,7 +77,7 @@ export function Hero() {
                 ))}
               </ol>
               <div className="mt-6 flex items-center justify-between border-t border-ink-100 pt-4 text-xs text-ink-500">
-                <span>Lead architect · {site.founder.name}</span>
+                <span>Founder-led · a senior architect on every engagement</span>
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {hero.pipeline.footer.map((f) => (

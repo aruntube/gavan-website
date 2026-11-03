@@ -63,7 +63,7 @@ export function Contact() {
           <Reveal delay={140} className="min-w-0 lg:col-span-7">
             <div className="card p-6 sm:p-8">
               <h3 className="text-xl font-bold">{contact.formTitle}</h3>
-              <p className="mt-1.5 text-sm text-ink-500">All submissions are reviewed directly by {site.founder.name}.</p>
+              <p className="mt-1.5 text-sm text-ink-500">Every submission is reviewed directly by our founder and lead architect.</p>
               <div className="mt-6">
                 <ProposalForm />
               </div>

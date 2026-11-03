@@ -10,12 +10,12 @@ export const site = {
   description:
     "Gavan Infotech is a founder-led digital product engineering partner. We design, build, modernise and scale software, cloud infrastructure and data systems for growing enterprises, startups and software vendors.",
   founder: {
-    name: "ArunKumar Ganeshmoorthy",
-    shortName: "Arun",
-    title: "Founder & Managing Director",
-    initials: "AG",
+    title: "Founder-led engineering leadership",
+    role: "Founder & Managing Director, hands-on senior architect",
+    summary:
+      "Gavan Infotech is led by its founder, a practising senior architect who sets the firm's technical standards and personally owns architecture quality and delivery commitments on every engagement.",
     quote:
-      "I lead the firm's technical standards, architecture quality and delivery commitments with hands-on oversight. Every engagement is structured around clean schemas, verifiable test gates and full client IP ownership from day one.",
+      "Every engagement is structured around clean schemas, verifiable test gates and full client IP ownership from day one. Clients talk to the people who design and build their systems, not to an account layer.",
     badges: [
       { label: "Governance", value: "Hands-on architecture" },
       { label: "Security standard", value: "DevSecOps built in" },
@@ -220,7 +220,7 @@ export const rescue = {
 export const leadership = {
   index: "07",
   eyebrow: "Founder & governance",
-  title: "Leadership profile",
+  title: "Leadership & governance",
 } as const;
 
 export const advantage = {
@@ -238,7 +238,7 @@ export const getStarted = {
   eyebrow: "How to get started",
   title: "Three simple steps to kick off delivery",
   steps: [
-    { step: "01", title: "Initial technical consultation", body: "A confidential 45-minute discussion directly with ArunKumar Ganeshmoorthy to review your project and architecture." },
+    { step: "01", title: "Initial technical consultation", body: "A confidential 45-minute discussion directly with our founder and lead architect to review your project and architecture." },
     { step: "02", title: "Architecture blueprint & proposal", body: "A clear proposal covering stack recommendations, sprint milestones and transparent commercial terms." },
     { step: "03", title: "Sprint zero kickoff", body: "We configure repositories, provision automated cloud environments and start development within ten business days." },
   ],
@@ -260,13 +260,13 @@ export const contact = {
     "48-hour project rescue audit",
   ],
   successTitle: "Request received",
-  successBody: "Thank you. ArunKumar Ganeshmoorthy and the engineering desk will respond with proposed meeting slots within 24 hours.",
+  successBody: "Thank you. Our founder and the engineering desk will respond with proposed meeting slots within 24 hours.",
 } as const;
 
 export const booking = {
   eyebrow: "Confidential engineering review",
   title: "Book a 45-minute architecture call",
-  body: "A direct technical review with founder ArunKumar Ganeshmoorthy.",
+  body: "A direct technical review with our founder and lead architect.",
   cta: "Confirm consultation slot",
   success: "Request logged. A calendar invite will follow within four business hours.",
 } as const;
